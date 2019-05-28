@@ -10,8 +10,7 @@ def batch_badge_creator(attendees)
 
 def assign_rooms(attendees)
   array = []
-   #each_with_index: keep track of the index number of the current iteration
-   attendees.each_with_index do |name, index|
+  attendees.each_with_index do |name, index|
       array << "Hello, #{name}! You'll be assigned to room #{index+1}!" 
    end
    array
